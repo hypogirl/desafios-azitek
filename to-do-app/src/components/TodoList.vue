@@ -7,7 +7,9 @@
             <button id="new-todo" class="orange-button margin-block" @click="addTodo">Adicionar</button>
         </div>
         <div class="cat-todo">
-            <h2>Adicionar to do's com factos sobre gatos</h2>
+            <h2>Adicionar to do's
+                <br>
+                com factos sobre gatos</h2>
             <input type="number" v-model="numberOfFacts" placeholder="Número de factos" class="big-title margin-block" style="width: 45%; display: inline;" required />
             <button id="new-cat" class="orange-button margin-block" @click="createFacts()">Adicionar</button>
         </div>
