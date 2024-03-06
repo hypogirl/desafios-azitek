@@ -1,0 +1,282 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+body {
+    background: #ffb347;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.new-todo {
+    height: 300px;
+    width: 48%;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    margin: 15px;
+    padding: 15px;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249 157 23) 90%);
+    border-radius: 5px;
+    border: solid 1px #00000026;
+}
+
+.normal-todo {
+    position: absolute;
+    width: 48%;
+}
+
+.cat-todo {
+    width: 48%;
+    left: 52%;
+    position: relative;
+}
+
+.new-todo .margin-block {
+    display: block;
+    margin: 5px;
+}
+
+.titles {
+    margin: 30px 0px 10px 0px;
+    background: linear-gradient(179.5deg, rgb(255 151 69) 3.3%, rgb(241 111 0) 96%);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filters {
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249 131 23) 90%);
+    border-radius: 5px;
+    height: 70px;
+    width: 70%;
+    padding: 6px 0px 0px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.filter-div {
+    position: absolute;
+    left: 25%;
+}
+
+.filter-div:nth-child(2n) {
+    left: 55%;
+}
+
+.todos {
+    margin-top: 15px;
+}
+
+.todo-list {
+    position: absolute;
+    width: 48%;
+    top: 320px;
+    left: 0;
+}
+
+.favorites-main {
+    top: 0%;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+}
+
+.favorite-body {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.favorite-item {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at 10% 20%, rgb(255 235 124) 0%, rgb(252 242 121) 90%);
+    -moz-box-shadow: 8px 10px 50px -22px rgba(0,0,0,1);
+    box-shadow: 8px 10px 50px -22px rgba(0,0,0,1);
+}
+
+.todo-body {
+    margin-bottom: 10px;
+}
+
+.todo-top {
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249 123 23) 90%);
+    padding: 0px 20px 10px 20px;
+    border-radius: 5px 5px 0px 0px;
+    color: black;
+}
+
+.todo-description {
+    color: black;
+    background: linear-gradient(89deg, rgb(253, 220, 155) 26.2%, rgb(255, 215, 165) 48.5%);
+    padding: 15px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.favorite-item .main-title {
+    color: black;
+    margin-left: auto;
+    width: 95%;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.favorite-description {
+    overflow: scroll;
+    text-overflow: ellipsis;
+    height: 70%;
+    overflow-x: hidden;
+    color: black;
+    margin: 11px 0px 0px 10px;
+}
+
+.favorite-item .title-change {
+    margin: 15px;
+    width: 80%;
+}
+
+.favorite-item textarea {
+    width: 90%;
+}
+
+ul {
+    list-style: none;
+}
+
+.big-title {
+    width: 100%;
+    padding: 7px 8px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 15px;
+    resize: none;
+    margin-top: 15px;
+}
+
+.new-todo h2 {
+    color: white;
+    padding-left: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 125px;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    resize: none;
+    margin: 10px;
+
+}
+
+.orange-button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.orange-button:hover,
+.orange-button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.orange-button:hover {
+  transform: translateY(-1px);
+}
+
+.orange-button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.yellow-button {
+    margin-left: 5px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: #FFD814;
+    border: 1px solid #FCD200;
+    font-size: 11px;
+    height: 22px;
+    padding: 0 6px;
+    text-align: center;
+    font-weight: 500;
+    color: #0F1111;
+}
+
+.yellow-button:hover{
+    background: #F7CA00;
+    border-color: #F2C200;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+    
+
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
